@@ -1,0 +1,666 @@
+ body{
+    font-family: 'Lato', sans-serif;
+	 background: #f1f2f7;
+ }
+ .header-bg{
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84) !important;  
+      border-bottom:none !important;
+ }
+ .top-left{
+    margin-top: 8px;
+ }
+ /* aside.left-panel ::-webkit-scrollbar {
+    display: none !important;
+  } */
+ 
+  
+.timeline{
+    --uiTimelineMainColor: var(--timelineMainColor, #14b4ec);
+    --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+  
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  /* .session-li{
+      background: #f1f2f7;
+     font-size: 20px !important;
+  } */
+  /* .menu-item-has-children.dropdown{
+    border-left: 4px solid transparent;
+  }
+  .menu-item-has-children.dropdown.show{
+    background: #242849;
+    border-left: 4px solid blue;
+  }
+  .menu-item-has-children.dropdown:hover{
+    background: #242849;
+    border-left: 4px solid blue;
+  } */
+  .timeline:before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: var(--uiTimelineMainColor);
+  
+    position: absolute;
+    top: 0;
+  }
+  .navbar .navbar-nav{
+    background: linear-gradient(to top, #141e30, #243b55) !important;  
+    font-family:  sans-serif !important;
+  }
+  .navbar .navbar-nav li.menu-item-has-children .sub-menu{
+    background: transparent !important;
+  }
+  .navbar .navbar-nav li > a{
+      color: white !important;
+  }
+  .navbar .navbar-nav li > a .menu-icon{
+    color: white !important;
+  }
+  .timeline__group{
+    position: relative;
+  }
+ 
+  
+  .timeline__group:not(:first-of-type){
+    margin-top: 4rem;
+  }
+  
+  .timeline__year{
+    padding: .5rem 1.5rem;
+    color: var(--uiTimelineSecondaryColor);
+    background-color: var(--uiTimelineMainColor);
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .timeline__box{
+    position: relative;
+  }
+  
+  .timeline__box:not(:last-of-type){
+    margin-bottom: 30px;
+  }
+  
+  .timeline__box:before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--uiTimelineMainColor);
+  
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .timeline__date{
+    min-width: 65px;
+    position: absolute;
+    left: 0;
+  
+    box-sizing: border-box;
+    padding: .5rem 1.5rem;
+    text-align: center;
+  
+    background-color: var(--uiTimelineMainColor);
+    color: var(--uiTimelineSecondaryColor);
+  }
+  
+  .timeline__day{
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+  }
+  
+  .timeline__month{
+    display: block;
+    font-size: .8em;
+    text-transform: uppercase;
+  }
+  
+  .timeline__post{
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    border-left: 3px solid var(--uiTimelineMainColor);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+    background-color: var(--uiTimelineSecondaryColor);
+  }
+   
+  @media screen and (min-width: 641px){
+  
+    .timeline:before{
+      left: 30px;
+    }
+  
+    .timeline__group{
+      padding-top: 55px;
+    }
+  
+    .timeline__box{
+      padding-left: 80px;
+    }
+  
+    .timeline__box:before{
+      top: 50%;
+      transform: translateY(-50%);  
+    }  
+  
+    .timeline__date{
+      top: 50%;
+      margin-top: -27px;
+    }
+  } 
+  .page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .page__demo{
+    flex-grow: 1;
+  }
+  
+  .main-container{
+    max-width: 960px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .page__container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 800px;
+  }
+  .model-border-left{
+    border-left: 3px solid #6081be;
+  }  
+  .font-si{
+    font-size: 11px !important;
+  }
+  .cc-2{
+    column-count: 2;
+  }
+
+  .student-img{
+    width: 100%;
+  }
+
+  /* nitin css start  */
+ 
+  .sidenav2 {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    left: 282px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 10px 3px 12px 0 rgba(0, 0, 0, 0.26); 
+    margin-top: 62px;
+    height: 500px;
+  }
+  
+  .sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  
+  
+  .sidenav2 .closebtn {
+    position: absolute;
+    right: 12px;
+    font-size: 26px;
+  }
+  
+  /*.inputDnD .form-control-file {
+    position: relative;
+    outline: none;
+    visibility: hidden;
+    cursor: pointer;
+  }
+  .inputDnD .form-control-file:before {
+  content: attr(data-title);
+    position: absolute;
+    background: white;
+    visibility: visible;
+    text-align: center;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }*/
+    /* nitin css End  */
+
+     /* jitendra css start */
+     #attendencetype53-0{
+      height: 18px;
+      width: 18px;
+      border-radius: 50px;
+      border: 2px solid blue;
+      position: relative;
+      top: 5px;
+      margin-right: 5px;
+  }
+  #attendencetype54-0{
+      height: 18px;
+      width: 18px;
+      border-radius: 50px;
+      border: 2px solid blue;
+      position: relative;
+      top: 5px;
+      margin-right: 5px;
+  }
+  .day-show span{
+      padding: 0px 5px;
+  }
+  .day-show span:nth-child(1) span{
+      color: green;
+  }
+  .day-show span:nth-child(2) span{
+      color: brown;
+  }
+  .day-show span:nth-child(3) span{
+      color: red;
+  }
+  .day-show span:nth-child(4) span{
+      color: brown;
+  }
+  .day-show span:nth-child(5) span{
+      color: grey;
+  }
+  .notice-board-message{
+      text-align: justify;
+      font-size: 13px;
+  }
+  .box{
+      border: 1px solid #80808026;
+      padding: 10px 10px;
+  }
+  .notice-board-message-detail p{
+      font-size: 12px;
+      margin: 0px;
+      padding: 0px;
+
+  }
+  .notice-board-message-detail{
+      float: right;
+  }
+  .notice-board-message-detail h6{
+      color: blue;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  #message-board{
+      width: 100%;
+      border: 1px solid  #ced4da;
+      height: 400px;
+  }
+  .form-check{
+      border: 1px solid #f5f5f5;
+      background: #f5f5f5;
+      border-radius: 5px;
+      padding: 10px 40px;
+  }
+  .minheight260 {
+      min-height: 260px;
+  }
+  .well {
+      min-height: 20px;
+      padding: 19px ;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  }
+  .wellscroll {
+      height: 190px;
+      
+  }
+  .stat-icon{
+     color: white !important;
+  }
+  .stat-text{
+      color: white !important;
+  }
+  .stat-heading{
+    color: white !important;
+  }
+  .dual-list .list-group {
+      margin-top: 8px;
+      padding: 10px 21px;
+  }
+  .dropdown-menu{
+      position: absolute;
+      top: 36px !important;
+      padding: 12px 18px;
+  }
+  .info-box-1{
+      transition: 0.5s;
+      cursor: pointer;
+  }
+  .info-box-1:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.16), 0 10px 10px rgba(0,0,0,.14) !important;
+  }
+  .upload-table thead tr th{
+      padding: 13px !important;
+      
+  }
+  .box-title{
+      display: inline-block;
+  }
+  .task-info label{
+      font-size: 12px;
+      padding-bottom: 5px;
+  }
+  .task-info h5{
+      font-size: 12px;
+      padding-bottom: 10px;
+  }
+  .col-summary{
+      background: #f4f4f4;
+  }
+  .taskside{
+      padding: 10px 10px;
+  }
+  .text-inner{
+      height: 300px;
+      border-radius: 5px;
+      background: #f4f4f4;
+      margin-bottom: 10px;
+     
+  }
+  .student-list-col input{
+      border: 1px solid #80808030;
+   
+      border-radius: 5px;
+  }
+  .button-col button{
+      margin: 0 auto;
+      display: table;
+  }
+  .nav-tabs li a{
+      padding: 8px 15px !important;
+     
+  }
+  .staff-text-div span{
+      background: #ccc8c8;
+      padding: 5px 6px;
+      position: relative;
+      top: 10px;
+      font-size: 12px;
+      border-radius: 5px;
+  }
+ 
+  .admin-card-div{
+   box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.2);
+  }
+
+  .staff-icon{
+      font-size: 20px !important;
+      
+  }
+  .profile-user-img{
+      height: 110px;
+      border-radius: 50%;
+      width: 110px;
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 10px;
+  }
+  .profile-username {
+      font-size: 20px;
+  }
+  .text-aqua{
+      color: #03a9f3 !important;
+  }
+  .profile-table-staff{
+      box-shadow:0 0 20px rgba(0, 0, 0, 0.08);
+    
+  }
+  .staffprofile {
+      background: #efeff0;
+      border-radius: 2px;
+      position: relative;
+      border: 1px solid #e4e4e4;
+      padding: 20px 10px;
+      margin-bottom: 20px;
+      display: block;
+  }
+  .staffprofile h5{
+      font-weight: bold;
+  }
+  .staffprofile span{
+      font-size: 18px;  
+  }
+  .icon-9{
+      font-size: 35px;
+      float: right;
+      display: inline-flex;
+  }
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 9999;
+      top: 55px;
+      right: 0;
+      box-shadow: -10px 3px 12px 0 rgba(0, 0, 0, 0.26);
+      background-color: #fff;
+      overflow-x: hidden;
+      transition: 0.5s;
+  }
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      border-bottom: 1px solid grey;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0px;
+      cursor: pointer;
+      color: white;
+      right: 25px;
+      font-size: 30px;
+      margin-left: 50px;
+  }
+  .content{
+      overflow: hidden;
+  }
+  .rotatetest{
+      text-align: center;
+      font-weight: bold;
+  }
+  /* jitendra css end */
+
+  /* akshnsh css start */
+
+  .modal-header{
+    background: linear-gradient(to right, #56ccf2, #2f80ed) !important;
+    color: #fff;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.modal-header h4 {
+    margin-bottom: 0;
+    margin-top: 0px;
+    height: 25px;
+    display: inline-block;
+}
+/* akshnsh css End */
+
+
+/* MahaVeer Sir Css Start */
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  } */
+  .tabs-front-ul.active{
+    border: 1px solid #44a8ef !important;
+    background: #44a8ef !important;
+    color: white !important;
+    border-radius: 5px !important;
+    
+  }
+  .tabs-front-ul{
+    font-size: 14px !important;
+  }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input.default:checked + .slider {
+  background-color: #444;
+}
+input.primary:checked + .slider {
+  background-color: #2196F3;
+}
+
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+  
+  /* Rounded sliders */
+ 
+  .rotatetest{
+    text-align: center;
+    font-weight: bold;
+  }
+  .button-manager-area{
+    margin: 0 auto;
+    display: table;
+  }
+  .media_manager_img{
+    border: 1px solid #0000002b;
+  }
+  ul li{
+    list-style: none;
+  }
+  .table-data{
+    display:flex !important;
+}
+.one-line{
+	display: inline;
+}
+/* MahaVeer Sir Css End */
